@@ -191,6 +191,8 @@ const App = {
         Transaction.all.forEach(DOM.addTransaction);
         
         DOM.updateBalance();
+
+        Storage.set(Transaction.all)
     },
 
     reload() {
